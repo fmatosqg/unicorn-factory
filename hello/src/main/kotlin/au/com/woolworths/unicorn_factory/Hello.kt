@@ -10,5 +10,14 @@ fun main() {
         isSweet = true,
         // origin = null,
     )
+
     println(Json.encodeToString(fruit))
+
+    Fruit(
+        name = "Apple",
+        color = "red",
+        isSweet = true
+    )
+        .let { Json.encodeToString(it) }
+        .let { println(it) }
 }
