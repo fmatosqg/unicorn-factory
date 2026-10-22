@@ -1,7 +1,7 @@
 package au.com.woolworths.unicorn_factory
 
+import junit.framework.TestCase.assertEquals
 import kotlin.test.Test
-import kotlin.test.assertEquals
 
 class ProduceTest {
 
@@ -11,6 +11,11 @@ class ProduceTest {
         Produce.Cereal("Cornflakes", "Kellogg's"),
         Produce.Cereal("Rice", "India Gate"),
     )
+
+    @Test
+    fun smokeTest(){
+
+    }
 
     @Test
     fun testFilterCereal() {
@@ -49,4 +54,17 @@ class ProduceTest {
         assertEquals(expectedNames, actualNames)
     }
 
+    @Test
+    fun testDescription() {
+        val expectedDescription = listOf<String>(
+            "Onion is not root",
+            "Carror is root",
+            "Cornflakes from Kellogg's",
+            "Rice from India Gate"
+        )
+
+        val actualDescription = getDescription(basket)
+
+        assertEquals(expectedDescription, actualDescription)
+    }
 }
