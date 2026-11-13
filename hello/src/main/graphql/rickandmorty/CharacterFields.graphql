@@ -1,0 +1,7 @@
+fragment CharacterFields on Character {
+  id
+  name
+  status
+  species
+  image
+}

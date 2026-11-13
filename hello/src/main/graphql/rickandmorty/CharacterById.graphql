@@ -1,0 +1,8 @@
+query CharacterById($id: ID!) {
+  character(id: $id) {
+    ...CharacterFields
+    origin {
+      name
+    }
+  }
+}

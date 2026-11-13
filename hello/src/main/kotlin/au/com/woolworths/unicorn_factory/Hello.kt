@@ -1,9 +1,11 @@
 package au.com.woolworths.unicorn_factory
 
+import kotlinx.coroutines.runBlocking
 import kotlinx.serialization.json.Json
 
 fun main() {
     println("Hello, world!")
+
     val fruit = Fruit(
         name = "Banana",
         color = "yellow",
@@ -21,3 +23,4 @@ fun main() {
         .let { Json.encodeToString(it) }
         .let { println(it) }
 }
+
