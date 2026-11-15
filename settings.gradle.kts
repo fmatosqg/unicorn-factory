@@ -1,4 +1,3 @@
-
 rootProject.name = "Unicorn factory"
 
 pluginManagement {
@@ -22,4 +21,7 @@ dependencyResolutionManagement {
     }
 }
 
-include("hello")
+include(
+    "hello",
+    "rick"
+)

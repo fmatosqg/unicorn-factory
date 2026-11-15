@@ -18,4 +18,4 @@ This overwrites `schema.graphqls` in this folder (the endpoint and target file a
 ./gradlew :hello:generateRickandmortyApolloSources
 ```
 
-Generated sources land in `hello/build/generated/source/apollo/rickandmorty`. This also runs automatically as part of `compileKotlin`.
+Generated sources land in `../../../../../hello/build/generated/source/apollo/rickandmorty`. This also runs automatically as part of `compileKotlin`.

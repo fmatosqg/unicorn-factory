@@ -1,4 +1,4 @@
-package au.com.woolworths.unicorn_factory
+package au.com.woolworths.unicorn_factory.rick
 
 import au.com.woolworths.unicorn_factory.rickandmorty.CharacterByIdQuery
 import au.com.woolworths.unicorn_factory.rickandmorty.CharactersPageQuery

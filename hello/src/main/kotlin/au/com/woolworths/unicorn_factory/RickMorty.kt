@@ -1,5 +1,6 @@
 package au.com.woolworths.unicorn_factory
 
+import au.com.woolworths.unicorn_factory.rick.RickAndMortyRepository
 import kotlinx.coroutines.runBlocking
 
 fun main(){
