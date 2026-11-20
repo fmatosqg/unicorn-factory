@@ -1,7 +1,7 @@
 package au.com.woolworths.unicorn_factory.rick
 
 import au.com.woolworths.unicorn_factory.rickandmorty.CharacterByIdQuery
-import au.com.woolworths.unicorn_factory.rickandmorty.CharactersPageQuery
+import au.com.woolworths.unicorn_factory.rickandmorty.CharactersPageFooBar2Query
 import com.apollographql.apollo.ApolloClient
 import com.apollographql.apollo.api.Optional
 
@@ -14,9 +14,9 @@ class RickAndMortyRepository {
           .execute().data?.character
     }
 
-    suspend fun getCharacterByName(name: String): List<CharactersPageQuery.Result?>? {
+    suspend fun getCharacterByName(name: String): List<CharactersPageFooBar2Query.Result?>? {
         return buildClient()
-            .query(CharactersPageQuery(name = Optional.present(name)))
+            .query(CharactersPageFooBar2Query(name = Optional.present(name)))
             .execute().data?.characters?.results
     }
     fun buildClient(): ApolloClient {

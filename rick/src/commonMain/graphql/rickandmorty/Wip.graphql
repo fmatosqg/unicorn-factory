@@ -1,0 +1,22 @@
+query adssadadss {
+
+    location(id: "1") {
+       ...L1
+
+    }
+}
+
+
+fragment L1 on Location {
+    id
+    created
+    dimension
+}
+
+
+query sssss {
+    locationsByIds(ids: "123" ) {
+        ...L1
+
+    }
+}

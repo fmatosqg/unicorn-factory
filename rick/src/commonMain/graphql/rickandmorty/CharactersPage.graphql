@@ -1,4 +1,4 @@
-query CharactersPage($page: Int, $name: String) {
+query CharactersPageFooBar2($page: Int, $name: String) {
   characters(page: $page, filter: { name: $name }) {
     info {
       count

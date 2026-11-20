@@ -23,5 +23,6 @@ dependencyResolutionManagement {
 
 include(
     "hello",
-    "rick"
+    "rick",
+//    "rick-ui"
 )
