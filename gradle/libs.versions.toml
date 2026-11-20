@@ -2,6 +2,20 @@
 kotlin = "2.4.20"
 kotlin-serialization = "1.9.0"
 
+agp = "9.4.1"
+androidx-activity = "1.9.3"
+androidx-appcompat = "1.7.0"
+androidx-core = "1.13.1"
+androidx-compose-bom = "2024.11.00"
+kotlinx-coroutines = "1.9.0"
+apollo = "5.1.0"
+auth0-kmp = "1.0.0-beta.0"
+kotlinpoet = "2.2.0"
+snakeyaml = "2.3"
+jetbrains-compose = "1.8.2"
+
+skie= "99.0.0"
+
 [libraries]
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlin-serialization" }
 kotlinx-serialization-cbor = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-cbor", version.ref = "kotlin-serialization" }
@@ -9,4 +23,11 @@ kotlinx-serialization-cbor = { group = "org.jetbrains.kotlinx", name = "kotlinx-
 
 [plugins]
 
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+androidMultiplatformLibrary = { id = "com.android.kotlin.multiplatform.library", version.ref = "agp" }
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+#apollo = { id = "com.apollographql.apollo", version.ref = "apollo" }
+#jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "jetbrains-compose" }
+skie = { id = "co.touchlab.skie", version.ref = "skie" }
